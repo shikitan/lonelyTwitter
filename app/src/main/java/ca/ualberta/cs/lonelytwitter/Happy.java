@@ -7,14 +7,17 @@ import java.util.Date;
  */
 public class Happy extends CurrentMood {
     public Happy() {
+
         super();
     }
 
     public Happy (Date date) {
+
         super(date);
     }
 
     public Boolean isHappy() {
+
         return Boolean.TRUE;
     }
 
