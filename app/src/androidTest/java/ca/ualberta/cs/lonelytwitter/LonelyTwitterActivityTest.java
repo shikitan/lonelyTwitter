@@ -68,7 +68,7 @@ public class LonelyTwitterActivityTest extends ActivityInstrumentationTestCase2 
             }
         });
         getInstrumentation().waitForIdleSync();
-        
+
         // the following was stolen from https://developer.android.com/training/activity-testing/activity-functional-testing.html
 
         // Validate that ReceiverActivity is started
@@ -83,7 +83,17 @@ public class LonelyTwitterActivityTest extends ActivityInstrumentationTestCase2 
         // Remove the ActivityMonitor
         getInstrumentation().removeMonitor(receiverActivityMonitor);
 
-        //end of tst : clear the data
+        //assert that the tweet being shown on the edit screen is the tweet clicked on
+        
+        //test the text of that tweet
+
+        //save our edits
+
+        //assert that our edits were saved into the tweet correctly
+
+        //assert that our edits are shown on the screen to the user back in the main activity
+
+        //end of test : clear the data
         //end of test: make sure the edit activity is closed
         receiverActivity.finish();
     }
